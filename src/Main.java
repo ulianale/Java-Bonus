@@ -1,13 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int x = 100; // количество денег на счету
-        int amount = 1009; // количество добавленных денег
-        int one_b = 100; // цена одного бонусного рубля
+        int money = 100; // количество денег на счету
+        int addMoney = 1009; // количество добавленных денег
+        int oneBonus = 100; // цена одного бонусного рубля
 
-        int bonus = amount > 1000 ? amount / one_b : 0;
-        int s = x + amount + bonus;
+        int bonus = addMoney > 1000 ? addMoney / oneBonus : 0;
 
         System.out.println("Начислено бонусных рублей: " + bonus);
-        System.out.println("Итоговая сумма на счете: " + s);
+        System.out.println("Итоговая сумма на счете: " + (money + addMoney + bonus));
     }
 }
